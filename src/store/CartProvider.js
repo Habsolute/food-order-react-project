@@ -27,10 +27,16 @@ function CartProvider(props) {
     defaultCardState
   );
 
+  /**
+   * Add un item in the cart
+   */
   const addItemCartHandler = (item) => {
     dispatchCartAction({ type: "ADD", item: item });
   };
 
+  /**
+   * remove un item of the card by id
+   */
   const removeItemCartHandler = (id) => {
     dispatchCartAction({ type: "REMOVE", id: id });
   };
